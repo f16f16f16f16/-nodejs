@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <script src="../js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/home"
+          ><img src="../photo/cosci.png" width="30px" height="30px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarColor03"
+          aria-controls="navbarColor03"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/movie">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/gallery">Gallery</a>
+            </li>
+
+          </ul>
+          <% if (isLogIn) { %>
+            <li class="nav-item" style="list-style-type: none">
+              <a class="nav-link" href="/logout" >Logout</a>
+            </li>
+          <% } else { %>
+            <li class="nav-item" style="list-style-type: none">
+              <a class="nav-link" href="/login" >Login</a>
+            </li>
+          <% } %>
+        </div>
+      </div>
+    </nav>
+
+    <h1 style="margin: 20px" align="center">หนังใหม่แนะนำ</h1>
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide bg-danger"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators" style="margin: 690px">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="4"
+          aria-label="Slide 5"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="5"
+          aria-label="Slide 6"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active text-center">
+          <img
+            class="img-thumbnail"
+            style="width: 1000px; height: 700px"
+            src="../photo/Black-Adam-Poster.png"
+          />
+          <p style="font-size: 20px; margin: 10px" align="center">เรื่องย่อ Black Adam แบล็กอดัม</p>
+          <p style="font-size: 15px; margin: 10px" align="center">
+            เกือบ 5,000
+            ปีแล้วที่เขาได้รับสุดยอดพลังจากเทพเจ้าโบราณแล้วถูกคุมขังตัวเอาไว้ทันที
+            ในที่สุด แบล็ก อดัม ก็ถูกปลดปล่อยจากสุสานของเขา
+            แล้วพร้อมที่จะระเบิดมหาอำนาจแห่งความยุติธรรมของตนบนโลกมนุษย์!
+          </p>
+        </div>
+        <div class="carousel-item text-center">
+          <img
+            src="../photo/doctor.jpg"
+            class="img-thumbnail"
+            style="width: 500px; height: 700px"
+          />
+          <p style="font-size: 20px; margin: 10px" align="center">เรื่องย่อ Doctor Strange in the Multiverse of Madness</p>
+          <p style="font-size: 15px; margin: 10px" align="center">
+            เพราะว่าเรา..ยังไม่รู้จักมัลติเวิร์สดีพอ! เตรียมพบกับเหตุอุบัติครั้งใหม่ที่จะทำให้จักรวาลต้องสั่นคลอน หลังจากที่พหุจักรวาลได้ถูกเปิดออกโดยบังเอิญ ด็อกเตอร์สเตรนจ์ จึงต้องพยายามหาทางยับยั้งวิกฤตครั้งนี้ให้จงได้ เขาจึงตัดสินใจเดินทางไปขอความช่วยเหลือจาก สการ์เลตต์ วิทช์ ที่ปลีกตัววิเวกเพียงลำพัง หลังจากที่เธอได้สร้างมหันตภัยครั้งใหญ่ แต่เธอก็เป็นคนเดียวที่เขาต้องพึงพา เพื่อที่จะสามารถจบเรื่องราววุ่นวายครั้งนี้ลง แต่มันอาจจะนำพาไปสู่การเผชิญหน้าที่น่ากลัวยิ่งกว่า...
+          </p>
+        </div>
+        <div class="carousel-item text-center">
+          <img
+            src="../photo/shangChi.jpeg"
+            class="img-thumbnail"
+            style="width: 500px; height: 700px"
+          />
+          <p style="font-size: 20px; margin: 10px" align="center">เรื่องย่อ Shang-Chi and the Legend of the Ten Ring</p>
+          <p style="font-size: 15px; margin: 10px" align="center">
+            ชาง-ชีกับตำนานลับเท็นริงส์ จะพาคุณไปพบกับต้นกำเนิดของซูเปอร์ฮีโร่คนล่าสุดของจักรวาลภาพยนตร์มาร์เวล ชาง-ชีต้องเผชิญหน้ากับอดีตที่เขาเคยเดินจากมาและเปิดเผยปริศนาแห่งองค์กร Ten Rings ที่ถูกซ่อนไว้ตั้งแต่เส้นเรื่องของ MCU ในภาพยนตร์ Iron Man ภาคแรก
+          </p>
+        </div>
+        <div class="carousel-item text-center">
+          <img
+            src="../photo/eternals.jpeg"
+            class="img-thumbnail"
+            style="width: 1000px; height: 700px"
+          />
+          <p style="font-size: 20px; margin: 10px" align="center">เรื่องย่อ Eternals ฮีโร่พลังเทพเจ้า</p>
+          <p style="font-size: 15px; margin: 10px" align="center">
+            ชะตาของมนุษยชาติ อยู่ในมือของซูเปอร์ฮีโร่กลุ่มนี้ ภาพยนตร์เรื่องล่าสุดจาก Marvel Studios ที่จะพาคุณไปพบกับทีมของเหล่าซูเปอร์ฮีโร่สุดทรงพลังของจักรวาลมาร์เวล “Eternals” มหากาพย์อันยาวนานของเหล่าเทพอมตะที่รวมตัวกันเพื่อปกป้องมวลมนุษย์จากศัตรูร้าย
+          </p>
+        </div>
+        <div class="carousel-item text-center">
+          <img
+            src="../photo/candy.jpg"
+            class="img-thumbnail"
+            style="width: 500px; height: 700px"
+          />
+          <p style="font-size: 20px; margin: 10px" align="center">เรื่องย่อ Candyman</p>
+          <p style="font-size: 15px; margin: 10px" align="center">
+            “แคนดี้แมน แคนดี้แมน แคนดี้แมน แคนดี้แมน แคนดี้แมน” “เอ่ยชื่อมัน 5 ครั้งหน้ากระจก มันจะปรากฎในภาพสะท้อนและฆ่าคุณ” อย่าลองดี! หากยังไม่อยากตาย เพราะแคนดี้แมนกำลังมา... หนังเรื่องนี้ดูเหมือนจะเป็นหนังภาคต่อในเฟรนไชส์ Candyman ที่มีมาตั้งแต่อดีตมากกว่าที่จะเป็นหนังรีบู๊ทใหม่ โดยเรื่องราวจะดำเนินเรื่องในยุคใหม่และจะพาคุณกลับไปยัง เขต Cabrini Green ย่านที่อยู่อาศัยแห่งหนึ่งในชิคาโก้ สถานที่ที่ซึ่งเริ่มต้นตำนาน Candyman
+          </p>
+        </div>
+        <div class="carousel-item text-center">
+          <img
+            src="../photo/scream.jpeg"
+            class="img-thumbnail"
+            style="width: 500px; height: 700px"
+          />
+          <p style="font-size: 20px; margin: 10px" align="center">เรื่องย่อ Scream หวีดสุดขีด</p>
+          <p style="font-size: 15px; margin: 10px" align="center">
+            Scream  การกลับมาของหนังระทึกขวัญฆาตกรไล่ฆ่าภายใต้หน้ากากขาว กำลังจะกลับมาอีกครั้ง โดยล่าสุดได้เผยภาพเหยื่อรายใหม่ผู้เคราะห์ร้ายกำลังนอนอยู่กลางถนน โดยในภาคนี้จะเป็นภาคที่มีการนองเลือดมากที่สุดของแฟรนไชส์หนังชุดนี้ด้วย ซึ่งยังไม่มีใครรู้ว่าภายใต้หน้ากากขาวของฆาตกรในภาคนี้คือใคร...
+
+            Scream ภาคนี้เป็นหนังภาคต่อจากหนังเขย่าขวัญวัยรุ่นชื่อดัง เมื่อช่วงปลายยุคปี 1990 ต่อเนื่องมาถึงช่วงต้นยุคปี 2000 ที่กลายเป็นแฟรนไชส์หนังสยองขวัญที่มีแฟนๆ ติดตามเป็นจำนวนมาก กับปริศนาของฆาตกรหน้ากาก 
+          </p>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div align="center"><button>ดูหนัง</button></div>
+    <a align="center" href='/views/logout'>Logout</a>
+  </body>
+</html>
